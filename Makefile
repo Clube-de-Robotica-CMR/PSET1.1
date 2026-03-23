@@ -1,4 +1,5 @@
-CFLAGS := -Wall -Wextra -Werror
+CC := gcc
+CFLAGS := -Wall -Wextra -Werror 
 
 %: %.c
-	gcc ${CFLAGS} $< lib/cs50.c -Ilib -o $@
+	$(CC) $(CFLAGS) $< lib/cs50.c -Ilib -o $@
